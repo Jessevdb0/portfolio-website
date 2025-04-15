@@ -2,11 +2,16 @@ body{
     background-color:white;
     margin:0;
     padding:0;
+    min-height: 100vh;
 }
 
 a, a:hover, a:visited{
     text-decoration: none;
     text-align: center;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -142,7 +147,7 @@ html {
     align-items:center;
     color:white;
     margin:0;
-    font-family:"Montserrat";
+    font-family:"Montserrat", sans-serif;
 }
 
 .development-button-bar, .piv-button-bar, .about-me-button-bar{
@@ -153,7 +158,7 @@ html {
     cursor: pointer;
     text-decoration:underline rgb(255, 255, 255, 0);
     transition:text-decoration-color 0.5s;
-    font-family:"Montserrat";
+    font-family:"Montserrat", sans-serif;
     font-size:15px;
 }
 
@@ -164,7 +169,7 @@ html {
 .development-home-title{
     display:flex;
     color: #FFF;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -174,17 +179,39 @@ html {
 }
 
 .development-home-content{
-    width: 1000px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    word-wrap:break-word;
+    width:90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:75px;
+}
+
+.development-time-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.development-titles{
+    font-size: 30px;
+    font-weight:bold;
+    color:white;
     margin:0;
-    margin-top:35px;
+}
+
+.development-home-text{
+    font-size:20px;
+    color:white;
+    max-width: 30ch;
+    line-height: 1.6;
+}
+
+
+.development-home-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .development-home-buttons{
@@ -198,7 +225,7 @@ html {
 }
 
 .development-buttons{
-    display: flex;
+    display: flex;;
     width: 240px;
     height: 71px;
     padding: 20px 0px 18px 0px;
@@ -210,24 +237,14 @@ html {
     color:black;
     border-color: rgba(0,0,0,0.6);
     border-width:5px;
-    color: #000;
-    font-family: "Sans Serif Collection";
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 33px; /* 137.5% */
-    margin-top:20px;
 }
 
 .development-buttons:hover{
     background:grey;
     cursor:pointer;
-}
-
-.development-home-container{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
 }
 
 body{
@@ -237,7 +254,7 @@ body{
 .page-title{
     display:flex;
     color: #FFF;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -247,10 +264,32 @@ body{
     justify-content: center;
 }
 
-.image-container{
+.image-container-rtd{
     width:450px;
     object-fit: cover;
     float:right;
+}
+
+.image-container-past-development, .image-container-future{
+    width:100%;
+    max-width: 500px;
+    flex:1;
+    object-fit: cover;
+}
+
+.development-reflection-past, .development-reflection-future{
+    display:flex;
+    width: 80vw;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap:break-word;
+    margin:0px;
+    margin-top:35px;
+    margin-left:10vw;
+    gap:25px;
 }
 
 img{
@@ -263,22 +302,35 @@ figcaption{
     color:white;
     text-align:center;
     font-size: 15px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
 
 .go-back-button{
+    margin-top:100px;
+    margin-bottom: 25px;
     height:40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     width:200px;
-    border-color: rgba(255,255,255,0.5);
     border-radius: 5px;
-    background-color: rgba(0,0,0,0.2);
-    color:white;
+    background-color: white;
+    border-color:white;
+    color:black;
+    font-size:15px;
+    font-weight: bold;
 }
 
 .go-back-button:hover{
     background-color:grey;
+    border-color:grey;
     cursor:pointer;
+}
+
+.past-development-content{
+    font-size:20px;
+    max-width:60ch;
+    line-height: 1.6;
 }
 
 /* present development styles */
@@ -286,7 +338,7 @@ figcaption{
 .development-reflection{
     width: 90vw;
     color: #FFF;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -402,6 +454,7 @@ figcaption{
 /* Hide the images by default */
 .mySlides {
   display: none;
+  flex-direction: column;
 }
 
 /* Next & previous buttons */
@@ -409,16 +462,17 @@ figcaption{
   cursor: pointer;
   position: absolute;
   top: 50%;
+  margin-top:-72px;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  padding: 8px;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   border-radius: 15;
+  background-color: rgba(0,0,0,0.2);
 }
 
 /* Position the "next button" to the right */
@@ -429,7 +483,7 @@ figcaption{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
 }
 
 /* Caption text */
@@ -437,12 +491,13 @@ figcaption{
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
   bottom: 0px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  background-color: rgba(0,0,0,0.4);
+  font-weight:500;
+  font-family: "Montserrat", sans-serif;
+  height:100px;
 }
 
 /* Number text (1/3 etc) */
