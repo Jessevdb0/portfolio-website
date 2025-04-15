@@ -248,10 +248,9 @@ body{
 }
 
 .image-container{
-    width:250px;
+    width:450px;
     object-fit: cover;
     float:right;
-    margin-left:10px;
 }
 
 img{
@@ -261,7 +260,7 @@ img{
 }
 
 figcaption{
-    color:black;
+    color:white;
     text-align:center;
     font-size: 15px;
     font-family: "Montserrat";
@@ -378,10 +377,9 @@ figcaption{
 }
 
 /*  
-    all the code from line 3-77 is based on W3schools tutorial: "How TO - Slideshow"
+    all the code from here is based on W3schools tutorial: "How TO - Slideshow"
     https://www.w3schools.com/howto/howto_js_slideshow.asp
 */
-
 
 /* Slideshow container */
 .slideshow-containers{
@@ -437,12 +435,14 @@ figcaption{
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.4);
 }
 
 /* Number text (1/3 etc) */
