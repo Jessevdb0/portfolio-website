@@ -1,0 +1,471 @@
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    display:flex;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    align-items: center;
+    background: #1A1E1E;
+    z-index:1;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content{
+    display: flex;
+    vertical-align: middle;
+}
+
+.header-text-content{
+    display:flex;
+    width: 795px;
+    padding: 75px 25px 150px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-text{
+    width:750px;
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom:0;
+}
+
+.header-text-small{
+    width:750px;
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.development-content{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    z-index:2;
+    background: linear-gradient(180deg, #161a1a 0%, #556464 100%);
+    margin-top: 100vh;
+    height: 100vh;
+}
+
+.piv-button, .development-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF;
+    color: #000;
+    font-family: "PlayFair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 137.5% */
+    width:250px;
+    height:80px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-width:5px;
+    border-color: rgba(0,0,0,0.5)
+}
+
+.piv-button:hover, .development-button:hover{
+    background:grey;
+}
+
+.header-buttons{
+    display:flex;
+    justify-content: center;
+    width:750px;
+    gap:35px;
+    margin-top:50px;
+}
+
+.portfolio-image{
+    width: 400px;
+    height: 535px;
+    flex-shrink: 0;
+    aspect-ratio: 80/107;
+    border-radius:20px;
+    margin-top:50px;
+}
+
+
+.top-bar{
+    display:flex;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter: blur(100px);
+    z-index:10;
+    justify-content: center;
+    height:50px;
+    width:100%;
+}
+
+.top-bar-content{
+    display: flex;
+    position: absolute;
+    right:5vw;
+    width: 500px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;;
+    text-align:center;
+}
+
+.top-bar-name{
+    display:flex;
+    position:absolute;
+    left:5vw;
+    height:100%;
+    align-items:center;
+    color:white;
+    margin:0;
+    font-family:"Montserrat";
+}
+
+.development-button-bar, .piv-button-bar, .about-me-button-bar{
+    background-color:transparent;
+    color:white;
+    height:100%;
+    border:none;
+    cursor: pointer;
+    text-decoration:underline rgb(255, 255, 255, 0);
+    transition:text-decoration-color 0.5s;
+    font-family:"Montserrat";
+    font-size:15px;
+}
+
+.development-button-bar:hover, .piv-button-bar:hover, .about-me-button-bar:hover{
+    text-decoration-color:rgb(255, 255, 255, 1);
+}
+
+.development-home-title{
+    display:flex;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0px;
+    margin-top:50px;
+}
+
+.development-home-content{
+    width: 1000px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap:break-word;
+    margin:0;
+    margin-top:35px;
+}
+
+.development-home-buttons{
+    display: flex;
+    width: 1000px;
+    height: 82px;
+    padding: 6px 0px 5px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 140px;
+}
+
+.development-buttons{
+    display: flex;
+    width: 240px;
+    height: 71px;
+    padding: 20px 0px 18px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: white;
+    color:black;
+    border-color: rgba(0,0,0,0.6);
+    border-width:5px;
+    color: #000;
+    font-family: "Sans Serif Collection";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 137.5% */
+    margin-top:20px;
+}
+
+.development-buttons:hover{
+    background:grey;
+    cursor:pointer;
+}
+
+.development-home-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+body{
+    background: linear-gradient(180deg, #161a1a 0%, #556464 100%);
+}
+
+.page-title{
+    display:flex;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:50px;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.image-container{
+    width:250px;
+    object-fit: cover;
+    float:right;
+    margin-left:10px;
+}
+
+img{
+    width:100%;
+    height:auto;
+    border-radius: 3%;
+}
+
+figcaption{
+    color:black;
+    text-align:center;
+    font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.go-back-button{
+    height:40px;
+    width:200px;
+    border-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+}
+
+.go-back-button:hover{
+    background-color:grey;
+    cursor:pointer;
+}
+
+/* present development styles */
+
+.development-reflection{
+    width: 90vw;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap:break-word;
+    margin:0px;
+    margin-top:35px;
+    margin-left:5vw;
+}
+
+.expertise-area-title-left, .project-title{
+    font-weight: bold;
+    font-size:30px;
+}
+
+.expertise-area-content-left{
+    max-width: 60ch;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.expertise-area-title-right{
+    margin-right:0;
+    margin-left:auto;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.expertise-area-content-right{
+    margin-right:0;
+    margin-left:auto;
+    max-width:60ch;
+    font-size:20px;
+    line-height:1.6;
+}
+
+.expertise-area-container{
+    display:flex;
+    flex-direction: row;
+    margin-top:50px;
+}
+
+.expertise-area-text-right{
+    margin-right:0;
+    margin-left:auto;
+}
+
+.professional-skills-container, .projects-activities-container{
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
+}
+
+.professional-skills-content-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.professional-skills-title, .projects-activities-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.project-content{
+    max-width:45ch;
+    line-height: 1.6;
+    font-size:20px;
+}
+
+.project-1-container{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#project-vertical, #DDW-vertical{
+    max-width: 300px;
+}
+
+.DDW-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:100px;
+}
+
+/*  
+    all the code from line 3-77 is based on W3schools tutorial: "How TO - Slideshow"
+    https://www.w3schools.com/howto/howto_js_slideshow.asp
+*/
+
+
+/* Slideshow container */
+.slideshow-containers{
+    margin-top:5vh;
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    max-width:400px;
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    gap:15px;
+}
+
+.slideshow-container {
+  position:relative;
+  max-width: 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border-radius: 15;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

@@ -1,0 +1,225 @@
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    display:flex;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    align-items: center;
+    background: #1A1E1E;
+    z-index:1;
+    justify-content: center;
+    text-align:center;
+}
+
+.header-content{
+    display: flex;    
+    vertical-align: middle;
+}
+
+.header-text-content{
+    display:flex;
+    width: 795px;
+    padding: 75px 25px 150px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-text{
+    width:750px;
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom:0;
+}
+
+.header-text-small{
+    width:750px;
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.piv-content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    z-index:2;
+    margin-top: 100vh;
+    background: linear-gradient(180deg, #161a1a 0%, #556464 100%);
+}
+
+.piv-button, .development-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF;
+    color: #000;
+    font-family: "PlayFair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 137.5% */
+    width:250px;
+    height:80px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-width:5px;
+    border-color: rgba(0,0,0,0.5)
+}
+
+.piv-button:hover, .development-button:hover{
+    background:grey;
+}
+
+.header-buttons{
+    display:flex;
+    justify-content: center;
+    width:750px;
+    gap:35px;
+    margin-top:50px;
+}
+
+.portfolio-image{
+    width: 400px;
+    height: 535px;
+    flex-shrink: 0;
+    aspect-ratio: 80/107;
+    border-radius:20px;
+    margin-top:50px;
+}
+
+.top-bar{
+    display:flex;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter: blur(100px);
+    z-index:10;
+    justify-content: center;
+    height:50px;
+    width:100%;
+}
+
+.top-bar-content{
+    display: flex;
+    position: absolute;
+    right:5vw;
+    width: 500px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;;
+    text-align:center;
+}
+
+.top-bar-name{
+    display:flex;
+    position:absolute;
+    left:5vw;
+    height:100%;
+    align-items:center;
+    color:white;
+    margin:0;
+    font-family:"Montserrat";
+}
+
+.development-button-bar, .piv-button-bar, .about-me-button-bar{
+    background-color:transparent;
+    color:white;
+    height:100%;
+    border:none;
+    cursor: pointer;
+    text-decoration:underline rgb(255, 255, 255, 0);
+    transition:text-decoration-color 0.5s;
+    font-family:"Montserrat";
+    font-size:15px;
+}
+
+.development-button-bar:hover, .piv-button-bar:hover, .about-me-button-bar:hover{
+    text-decoration-color:rgb(255, 255, 255, 1);
+}
+
+.professional-identity-title{
+    display:flex;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:50px;
+    margin-bottom: 0;
+}
+
+.professional-identity-content{
+    max-width: 65ch;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap:break-word;
+    margin:0px;
+    margin-top:35px;
+}
+
+.professional-identity-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision-title{
+    display:flex;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:100px;
+    margin-bottom: 0;
+}
+
+.vision-content{
+    max-width:65ch;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap:break-word;
+    margin:0px;
+    margin-top:35px;
+}
+
+.vision-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
